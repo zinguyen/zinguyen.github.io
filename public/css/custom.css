@@ -153,6 +153,10 @@ a.nav-link:hover::after {
   margin-bottom: 60px;
 }
 
+.projects a:last-of-type .project-preview {
+  margin-bottom: 0;
+}
+
 .preview {
   display: flex;
   flex-direction: column;
