@@ -5,14 +5,12 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.25rem;
-}
-
-a {
-  color: var(--maroon);
+  color: #333;
 }
 
 a:hover {
   text-decoration: none;
+  color: var(--maroon);
 }
 
 .btn-round {
@@ -102,7 +100,7 @@ a.nav-link:hover::after {
 /* ================ INTRO ================ */
 
 .intro {
-  padding: 150px 0;
+  padding: 150px 0 90px 0;
   min-height: 70vh;
 }
 
@@ -251,8 +249,7 @@ a.nav-link:hover::after {
 }
 
 .project-thumbnail {
- display: flex;
- justify-content: center; 
+ text-align: center;
 }
 
 /* ================ MEDIA QUERIES ================ */
@@ -269,5 +266,33 @@ a.nav-link:hover::after {
   }
   .footer-content {
     padding: 0 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .profile {
+    margin-bottom: 2rem;
+  }
+  .footer-content {
+    padding: 0 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .copyright {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .footer-content .social-icons {
+    justify-content: center;
+  }
+  .project-preview img {
+    margin-bottom: 1rem;
   }
 }
