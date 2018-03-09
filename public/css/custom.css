@@ -8,12 +8,14 @@ body {
   color: #333;
 }
 
-a:hover {
+a:hover,
+a.next-link:hover {
   text-decoration: none;
   color: var(--maroon);
 }
 
-.subtitle-heading {
+.subtitle-heading,
+.next {
   font-family: 'Inconsolata',
   sans-serif;
   font-size: 1rem;
@@ -194,7 +196,7 @@ a.nav-link:hover::after {
 /* ================ PROJECT INFO ================ */
 
 .project-info {
-  margin: 150px 0;
+  margin: 150px 0 100px 0;
 }
 
 .project-title h2 {
@@ -226,6 +228,22 @@ a.nav-link:hover::after {
 
 .project-thumbnail {
   text-align: center;
+}
+
+.pagination {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.next-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.424rem;
+  display: inline-block;
+  margin: 0 2.027rem;
+}
+
+a.next-link {
+  color: #333;
 }
 
 /* ================ ABOUT ================ */
