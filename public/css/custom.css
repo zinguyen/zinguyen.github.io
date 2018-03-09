@@ -4,13 +4,23 @@
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.125rem; /* major second ratio */
   color: #333;
 }
 
 a:hover {
   text-decoration: none;
   color: var(--maroon);
+}
+
+.subtitle-heading {
+  font-family: 'Inconsolata',
+  sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
 }
 
 .btn-round {
@@ -106,14 +116,14 @@ a.nav-link:hover::after {
 
 .greeting {
   color: var(--maroon);
-  font-size: 5rem;
+  font-size: 4.624rem;
   font-weight: 600;
   margin-bottom: 20px;
   display: inline-block;
 }
 
 .tagline {
-  font-size: 1.75rem;
+  font-size: 1.602rem;
   margin-bottom: 4.5rem;
   display: inline-block;
 }
@@ -140,15 +150,6 @@ a.nav-link:hover::after {
   color: var(--maroon);
 }
 
-.section-title h2 {
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 2px;
-  font-size: 1rem;
-  margin-bottom: 40px;
-  color: var(--maroon);
-}
-
 .project-preview {
   margin-bottom: 60px;
 }
@@ -164,11 +165,15 @@ a.nav-link:hover::after {
 }
 
 .preview-title {
-  font-size: 1.953rem;
+  font-family: 'Playfair Display',
+  serif;
+  font-size: 2.281rem;
   font-weight: 700;
 }
 
 .preview-tech {
+  font-family: 'Inconsolata',
+  sans-serif;
   margin-bottom: 1.2rem;
   color: rgba(0, 0, 0, 0.3);
   font-size: 1rem;
@@ -184,6 +189,43 @@ a.nav-link:hover::after {
 
 .project-preview:hover img {
   transform: scale(1.1, 1.1);
+}
+
+/* ================ PROJECT INFO ================ */
+
+.project-info {
+  margin: 150px 0;
+}
+
+.project-title h2 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 2px;
+  font-size: 2.887rem;
+  font-weight: 700;
+}
+
+.project-title {
+  margin-bottom: 3rem;
+}
+
+.project-link {
+  font-family: 'Inconsolata', sans-serif;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.project-desc .subtitle-heading {
+  margin-bottom: 1rem;
+}
+
+.desc-group {
+  margin-bottom: 2.441rem;
+}
+
+.project-thumbnail {
+  text-align: center;
 }
 
 /* ================ ABOUT ================ */
@@ -203,7 +245,7 @@ a.nav-link:hover::after {
   background-color: #333;
   color: #fff;
   padding: 30px 0;
-  font-size: 0.875rem;
+  font-size: 0.889rem;
   letter-spacing: 1px;
 }
 
@@ -222,40 +264,6 @@ a.nav-link:hover::after {
   justify-content: flex-end;
 }
 
-/* ================ PROJECT INFO ================ */
-.project-info {
-  margin: 150px 0;
-}
-
-.project-title {
-  font-size: 3.052rem;
-  font-weight: 700;
-  margin-bottom: 3rem;
-}
-
-.project-link {
-  display: block;
-  font-size: 16px;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.project-subtitle {
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: var(--maroon);
-}
-
-.desc-group {
-  margin-bottom: 2.441rem;
-}
-
-.project-thumbnail {
- text-align: center;
-}
-
 /* ================ MEDIA QUERIES ================ */
 @media (min-width: 576px) and (max-width: 992px) {
   .about-me {
@@ -269,7 +277,7 @@ a.nav-link:hover::after {
     max-width: 100%;
   }
   .footer-content {
-    padding: 0 3rem;
+    padding: 0 2rem;
   }
 }
 
@@ -289,7 +297,6 @@ a.nav-link:hover::after {
     align-items: center;
   }
   .copyright {
-    font-size: 1rem;
     text-align: center;
     margin-bottom: 1.5rem;
   }
