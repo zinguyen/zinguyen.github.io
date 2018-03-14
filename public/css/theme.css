@@ -94,7 +94,7 @@
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: rgb(221, 221, 221);
+		background: rgb(209, 209, 209);
 		color: rgb(0, 0, 0);
 		height: 100%;
 		max-width: 80%;
