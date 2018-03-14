@@ -11,7 +11,7 @@
 
   <title>
     
-       &middot; Zi Nguyen
+      Blog &middot; Zi Nguyen
     
   </title>
 
@@ -26,13 +26,14 @@
     crossorigin="anonymous"></script>
     
   <!-- CSS -->
-  <link rel="stylesheet" href="public/css/custom.css">
-  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inconsolata|Source+Sans+Pro:400,600" rel="stylesheet">
+  <link rel="stylesheet" href="/public/css/theme.css">
+  <link rel="stylesheet" href="/public/css/custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inconsolata" rel="stylesheet">
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/apple-touch-icon-144-precomposed.png">
-                                 <link rel="shortcut icon" href="public/favicon.png">
-  <link rel="shortcut icon" href="public/img/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.png">
+  <link rel="shortcut icon" href="/public/favicon.png">
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <!-- RSS -->
@@ -41,55 +42,106 @@
 
 
   <body>
-    <nav class="navbar">
-      <div class="container">
-        <div class="nav-items">
-          <a class="brand" href="/">Zi Nguyen</a>
+    <div class="page-wrapper">
+      <header id="header" class="alt">
+  <a class="brand" href="http://localhost:4000">Zi Nguyen</a>
+  <nav id="nav">
+    <ul>
+      <li class="special">
+        <a href="#menu" class="menuToggle">
+          <span>Menu</span>
+        </a>
+        <div id="menu">
+          <ul>
+            <li>
+              <a href="http://localhost:4000">Home</a>
+            </li>
+            <li>
+              <a href="http://localhost:4000/blog">Blog</a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </nav>
-    <div class="content container">
-      <div class="posts">
+      </li>
+    </ul>
+  </nav>
+</header>
+<!-- <nav class="navbar navbar-expand-lg">
+  <a class="brand" href="http://localhost:4000">Zi Nguyen</a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars nav-toggle-icon"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="http://localhost:4000">Home
+        <span class="sr-only">(current)</span>
+      </a>
+      <a class="nav-item nav-link" href="http://localhost:4000/blog">Blog</a>
+    </div>
+  </div>
+</nav> -->
+
+<!-- <nav class="navbar">
+  <div class="container">
+    <div class="nav-items">
+      <a class="brand" href="http://localhost:4000">Zi Nguyen</a>
+    </div>
+  </div>
+</nav> -->
+      <!-- <nav class="navbar">
+        <div class="container">
+          <div class="nav-items">
+            <a class="brand" href="http://localhost:4000">Zi Nguyen</a>
+          </div>
+        </div>
+      </nav> -->
+      <div class="content">
+        <div class="posts col-md-8 offset-md-2">
   
   <div class="post">
     <header>
       <h1 class="post-title">
-        <a class="post-link" href="/jekyll/update/2018/03/10/whats-jekyll.html">
+        <a class="post-link" href="/2018/02/28/another-post.html">
+          Another Post
+        </a>
+      </h1>
+      <p class="post-meta">
+        February 28, 2018
+      </p>
+    </header>
+    <div class="post-excerpt">
+      <p>This is an example post.</p>
+
+
+    </div>
+    <div class="read-more-wrapper">
+      <a class="button read-more-link" href="/2018/02/28/another-post.html">Read More →</a>
+    </div>
+  </div>
+  
+  <div class="post">
+    <header>
+      <h1 class="post-title">
+        <a class="post-link" href="/2018/01/05/hello-world.html">
           Hello World
         </a>
       </h1>
-      <p class="meta">
-        March 10, 2018
+      <p class="post-meta">
+        January 5, 2018
       </p>
     </header>
-    <div class="excerpt">
-      <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+    <div class="post-excerpt">
+      <p>This is an example post.</p>
 
 
-      <a class="button" href="/jekyll/update/2018/03/10/whats-jekyll.html">Read More</a>
+    </div>
+    <div class="read-more-wrapper">
+      <a class="button read-more-link" href="/2018/01/05/hello-world.html">Read More →</a>
     </div>
   </div>
   
-  <div class="post">
-    <header>
-      <h1 class="post-title">
-        <a class="post-link" href="/jekyll/update/2018/02/09/welcome-to-jekyll.html">
-          Welcome
-        </a>
-      </h1>
-      <p class="meta">
-        February 9, 2018
-      </p>
-    </header>
-    <div class="excerpt">
-      <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server Sand auto-regenerates your site when a file is updated.</p>
-
-
-      <a class="button" href="/jekyll/update/2018/02/09/welcome-to-jekyll.html">Read More</a>
-    </div>
-  </div>
-  
-  </div>
 
   <!-- Pagination -->
   <div class="pagination">
@@ -98,6 +150,8 @@
      
     <span class="pagination-item newer">Newer</span>
     
+  </div><!-- Pagination -->
+
   </div>
 </div>
 <!-- <div class="posts">
@@ -106,7 +160,46 @@
 
 
 
-    </div>
+      </div>
 
+    <footer class="footer">
+  <div class="container">
+    <div class="row footer-content">
+      <div class="col-md-4 col-sm-4 copyright">
+        <p>2018 © Zi Nguyen <br/>
+         Built with love and coffee
+      </div>
+      <div class="col-md-8 col-sm-8 social-icons">
+        <a href="mailto:zi@zinguyen.com">
+          <div class="btn btn-round">
+            <i class="fa fa-envelope" title="Email me"></i>
+          </div>
+        </a>
+
+        <a href="https://github.com/zinguyen">
+          <div class="btn btn-round">
+            <i class="fab fa-github" title="Connect with me on GitHub"></i>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/zinguyen/">
+          <div class="btn btn-round">
+            <i class="fab fa-linkedin-in" title="Connect with me on LinkedIn"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/public/js/jquery.min.js"></script>
+  <script src="/public/js/jquery.scrollex.min.js"></script>
+  <script src="/public/js/jquery.scrolly.min.js"></script>
+  <script src="/public/js/skel.min.js"></script>
+  <script src="/public/js/util.js"></script>
+  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="/public/js/main.js"></script>
   </body>
 </html>

@@ -4,16 +4,29 @@
   {% include head.html %}
 
   <body>
-    <nav class="navbar">
-      <div class="container">
-        <div class="nav-items">
-          <a class="brand" href="/">Zi Nguyen</a>
+    <div class="page-wrapper">
+      {% include nav.html %}
+      <!-- <nav class="navbar">
+        <div class="container">
+          <div class="nav-items">
+            <a class="brand" href="{{ site.url }}">Zi Nguyen</a>
+          </div>
         </div>
+      </nav> -->
+      <div class="content">
+        {{ content }}
       </div>
-    </nav>
-    <div class="content container">
-      {{ content }}
-    </div>
 
+    {% include footer.html %}
+  </div>
+
+  <!-- Scripts -->
+  <script src="{{ site.baseurl }}/public/js/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/public/js/jquery.scrollex.min.js"></script>
+  <script src="{{ site.baseurl }}/public/js/jquery.scrolly.min.js"></script>
+  <script src="{{ site.baseurl }}/public/js/skel.min.js"></script>
+  <script src="{{ site.baseurl }}/public/js/util.js"></script>
+  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="{{ site.baseurl }}/public/js/main.js"></script>
   </body>
 </html>

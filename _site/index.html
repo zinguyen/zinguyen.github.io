@@ -26,13 +26,14 @@
     crossorigin="anonymous"></script>
     
   <!-- CSS -->
-  <link rel="stylesheet" href="public/css/custom.css">
-  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inconsolata|Source+Sans+Pro:400,600" rel="stylesheet">
+  <link rel="stylesheet" href="/public/css/theme.css">
+  <link rel="stylesheet" href="/public/css/custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inconsolata" rel="stylesheet">
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/apple-touch-icon-144-precomposed.png">
-                                 <link rel="shortcut icon" href="public/favicon.png">
-  <link rel="shortcut icon" href="public/img/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.png">
+  <link rel="shortcut icon" href="/public/favicon.png">
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <!-- RSS -->
@@ -41,15 +42,63 @@
 
 
 <body>
-	<nav class="navbar">
-		<div class="container">
-			<div class="nav-items">
-				<a class="brand" href="/">Zi Nguyen</a>
-			</div>
-		</div>
-	</nav>
+	
+	 <header id="header" class="alt">
+  <a class="brand" href="http://localhost:4000">Zi Nguyen</a>
+  <nav id="nav">
+    <ul>
+      <li class="special">
+        <a href="#menu" class="menuToggle">
+          <span>Menu</span>
+        </a>
+        <div id="menu">
+          <ul>
+            <li>
+              <a href="http://localhost:4000">Home</a>
+            </li>
+            <li>
+              <a href="http://localhost:4000/blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+<!-- <nav class="navbar navbar-expand-lg">
+  <a class="brand" href="http://localhost:4000">Zi Nguyen</a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars nav-toggle-icon"></i>
+  </button>
 
-	<section class="intro">
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="http://localhost:4000">Home
+        <span class="sr-only">(current)</span>
+      </a>
+      <a class="nav-item nav-link" href="http://localhost:4000/blog">Blog</a>
+    </div>
+  </div>
+</nav> -->
+
+<!-- <nav class="navbar">
+  <div class="container">
+    <div class="nav-items">
+      <a class="brand" href="http://localhost:4000">Zi Nguyen</a>
+    </div>
+  </div>
+</nav> -->
+	<!-- Banner -->
+	<section id="banner">
+		<div class="inner">
+			<h2>Zi Nguyen</h2>
+			<p>Photographer turned Web Developer</p>
+		</div>
+		<a href="#portfolio" class="more scrolly">View Portfolio</a>
+	</section>
+	<!-- <section class="intro">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 short-about">
@@ -82,10 +131,10 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!--Intro-->
 
-	<section class="projects">
+	<section id="portfolio" class="projects">
 		<div class="container">
 			<div class="section-title">
 				<h2 class="subtitle-heading">Projects - </h2>
@@ -159,36 +208,41 @@
 	</section>
 
 	<footer class="footer">
-		<div class="container">
-			<div class="row footer-content">
-				<div class="col-md-4 col-sm-4 copyright">
-					<p>2018 © Zi Nguyen</p>
-					<p>Built with love and coffee</p>
-				</div>
-				<div class="col-md-8 col-sm-8 social-icons">
-					<a href="mailto:zi@zinguyen.com">
-						<div class="btn btn-round">
-							<i class="fa fa-envelope" title="Email me"></i>
-						</div>
-					</a>
+  <div class="container">
+    <div class="row footer-content">
+      <div class="col-md-4 col-sm-4 copyright">
+        <p>2018 © Zi Nguyen <br/>
+         Built with love and coffee
+      </div>
+      <div class="col-md-8 col-sm-8 social-icons">
+        <a href="mailto:zi@zinguyen.com">
+          <div class="btn btn-round">
+            <i class="fa fa-envelope" title="Email me"></i>
+          </div>
+        </a>
 
-					<a href="https://github.com/zinguyen">
-						<div class="btn btn-round">
-							<i class="fab fa-github" title="Connect with me on GitHub"></i>
-						</div>
-					</a>
+        <a href="https://github.com/zinguyen">
+          <div class="btn btn-round">
+            <i class="fab fa-github" title="Connect with me on GitHub"></i>
+          </div>
+        </a>
 
-					<a href="https://www.linkedin.com/in/zinguyen/">
-						<div class="btn btn-round">
-							<i class="fab fa-linkedin-in" title="Connect with me on LinkedIn"></i>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-
-	<script src="public/js/script.js"></script>
+        <a href="https://www.linkedin.com/in/zinguyen/">
+          <div class="btn btn-round">
+            <i class="fab fa-linkedin-in" title="Connect with me on LinkedIn"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+	<!-- Scripts -->
+	<script src="/public/js/jquery.min.js"></script>
+	<script src="/public/js/jquery.scrollex.min.js"></script>
+	<script src="/public/js/jquery.scrolly.min.js"></script>
+	<script src="/public/js/skel.min.js"></script>
+	<script src="/public/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="/public/js/main.js"></script>
 </body>
 </html>

@@ -1,9 +1,9 @@
 ---
 layout: default
-Title: Blog
+title: Blog
 permalink: /blog
 ---
-<div class="posts">
+<div class="posts col-md-8 offset-md-2">
   {% for post in site.posts %}
   <div class="post">
     <header>
@@ -12,17 +12,18 @@ permalink: /blog
           {{ post.title }}
         </a>
       </h1>
-      <p class="meta">
+      <p class="post-meta">
         {{ post.date | date: "%B %-d, %Y" }}
       </p>
     </header>
-    <div class="excerpt">
+    <div class="post-excerpt">
       {{ post.excerpt }}
-      <a class="button" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
+    </div>
+    <div class="read-more-wrapper">
+      <a class="button read-more-link" href="{{ post.url | prepend: site.baseurl }}">Read More →</a>
     </div>
   </div>
   {% endfor %}
-  </div>
 
   <!-- Pagination -->
   <div class="pagination">
@@ -37,6 +38,8 @@ permalink: /blog
     {% endif %} {% else %}
     <span class="pagination-item newer">Newer</span>
     {% endif %}
+  </div><!-- Pagination -->
+
   </div>
 </div>
 <!-- <div class="posts">
