@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}
+
+<body>
+	<nav class="navbar">
+		<div class="container">
+			<div class="nav-items">
+				<a class="brand" href="/">Zi Nguyen</a>
+			</div>
+		</div>
+	</nav>
+
+	<section class="intro">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 short-about">
+					<div>
+						<h2>
+							<span class="greeting">Hi there,</span>
+							<br>
+							<span class="tagline">I'm Zi Nguyen, a Boston-based photographer turned web developer.</span>
+						</h2>
+					</div>
+					<div class="social-icons">
+						<a href="mailto:{{ site.author.email }}">
+							<div class="btn btn-round">
+								<i class="fa fa-envelope" title="Email me"></i>
+							</div>
+						</a>
+
+						<a href="{{ site.author.github }}">
+							<div class="btn btn-round">
+								<i class="fab fa-github" title="Connect with me on GitHub"></i>
+							</div>
+						</a>
+
+						<a href="{{ site.author.linkedin }}">
+							<div class="btn btn-round">
+								<i class="fab fa-linkedin-in" title="Connect with me on LinkedIn"></i>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Intro-->
+
+	<section class="projects">
+		<div class="container">
+			<div class="section-title">
+				<h2 class="subtitle-heading">Projects - </h2>
+			</div>
+			<a href="bookswap.html">
+				<div class="row project-preview">
+					<div class="col-md-4 col-sm-4">
+						<img src="../public/images/bbt-preview.jpg" class="img-fluid" alt="">
+					</div>
+					<div class="col-md-7 col-sm-7 offset-md-1 offset-sm-1 preview">
+						<div class="preview-title">
+							BookSwap
+						</div>
+						<div class="preview-tech">
+							HTML/CSS, Node.js, Express
+						</div>
+						<div class="preview-summary">
+							BookSwap is a book trading app for avid book lovers looking to trade their old books for something new.
+						</div>
+					</div>
+				</div>
+			</a>
+			<!--project preview-->
+
+			<a href="https://github.com/zinguyen/gif-me-it">
+				<div class="row project-preview">
+					<div class="col-md-4 col-sm-4">
+						<img src="../public/images/gif-me-it-preview.jpg" class="img-fluid" alt="">
+					</div>
+					<div class="col-md-7 col-sm-7 offset-md-1 offset-sm-1 preview">
+						<div class="preview-title">
+							Gif Me It
+						</div>
+						<div class="preview-tech">
+							HTML/CSS, JavaScript
+						</div>
+						<div class="preview-summary">
+							A single-page interactive web application that enables users to search for GIFs.
+						</div>
+					</div>
+				</div>
+			</a>
+			<!--project preview-->
+		</div>
+	</section>
+	<!--projects-->
+
+	<section class="about">
+		<div class="container">
+			<div class="section-title">
+				<h2 class="subtitle-heading">About - </h2>
+			</div>
+			<div class="row about-me">
+				<div class="col-md-4 profile">
+					<img class="img-fluid" src="../public/images/profile-2.jpg" alt="">
+				</div>
+				<div class="col-md-7 about-desc">
+					<p>My name is Zi Nguyen and I'm a Boston-based self-taught photographer turned web developer.</p>
+					<p>My first experience with coding was when I wanted to make some stylistic changes to my photography portfolio. Not knowing
+						much about HTML or CSS, I embarked on several Google search adventures to find the code I needed and followed the instructions
+						to implement them on my site. Back then, I found great power in using inline styling :)</p>
+					<p>Today, I'm a Web Developer in training. I've completed two Udemy's Web Development Bootcamp courses, learning to build
+						web applications from start to finish. I also completed CS50X, Harvard University's introduction to Computer Science,
+						in order to understand the code I'm writing a little better.</p>
+					<p>When I'm not in front of a computer or behind a camera, I love to explore new places with my husband, break a sweat
+						at the gym, or attempt to make an international dish. No matter how many dishes I've tried to cook, Vietnamese food
+						remains my strength.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row footer-content">
+				<div class="col-md-4 col-sm-4 copyright">
+					<p>2018 © Zi Nguyen</p>
+					<p>Built with love and coffee</p>
+				</div>
+				<div class="col-md-8 col-sm-8 social-icons">
+					<a href="mailto:{{ site.author.email }}">
+						<div class="btn btn-round">
+							<i class="fa fa-envelope" title="Email me"></i>
+						</div>
+					</a>
+
+					<a href="{{ site.author.github }}">
+						<div class="btn btn-round">
+							<i class="fab fa-github" title="Connect with me on GitHub"></i>
+						</div>
+					</a>
+
+					<a href="{{ site.author.linkedin }}">
+						<div class="btn btn-round">
+							<i class="fab fa-linkedin-in" title="Connect with me on LinkedIn"></i>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="public/js/script.js"></script>
+</body>
+</html>
