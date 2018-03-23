@@ -323,13 +323,10 @@ a.next-link {
   margin-bottom: 0;
 }
 
-.copyright {
-  text-align: center;
-}
-
 .footer-content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 7rem;
 }
 
@@ -338,6 +335,9 @@ a.next-link {
   justify-content: flex-end;
 }
 
+.copyright {
+  text-align: center;
+}
 /* ================ BLOG ================ */
 .posts,
 .single-post {
