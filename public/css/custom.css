@@ -42,10 +42,6 @@ a.next-link:hover {
   color: var(--maroon);
 }
 
-.img-fluid {
-  max-width: 100%;
-}
-
 
 /* UTILITIES */
 .margin-bottom-sm {
