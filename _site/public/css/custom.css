@@ -15,12 +15,12 @@ html {
 }
 
 body {
-  font-size: 1.125rem;
+  font-size: 1rem;
   /* major second ratio */
   color: var(--body-text-dark);
   position: relative;
   margin: 0;
-  padding-bottom: 6rem;
+  padding-bottom: 8rem;
   min-height: 100%;
 }
 
@@ -29,6 +29,12 @@ body {
   margin-bottom: 6.5rem;
   position: relative;
 } */
+
+a:link,
+a:visited {
+  color: var(--body-text-dark);
+  border-bottom: 1px dotted var(--body-text-dark);
+}
 
 a:hover,
 a.next-link:hover {
@@ -47,7 +53,7 @@ a.next-link:hover {
 }
 
 .btn-round {
-  background-color: var(--light-grey);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   height: 40px;
   width: 40px;
@@ -83,7 +89,7 @@ a.next-link:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.brand {
+a.brand {
   font-weight: 400;
   text-transform: uppercase;
   color: #fff;
@@ -92,7 +98,10 @@ a.next-link:hover {
   transition: 0.3s ease;
 }
 
-.brand:hover, a.nav-link:hover {
+.brand:hover {
+  color: rgba(255,255,255,0.5);
+}
+/* .brand:hover, a.nav-link:hover {
   text-decoration: none;
   color: #fff;
 }
@@ -108,7 +117,7 @@ a.next-link:hover {
 
 .brand:hover::after, a.nav-link:hover::after {
   width: 100%;
-}
+} */
 
 .primary-nav {
   display: flex;
@@ -159,7 +168,7 @@ a.next-link:hover {
 }
 
 .social-icons a {
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 
 /* ================ PROJECTS ================ */
@@ -237,7 +246,7 @@ a.next-link:hover {
 .project-link,
 .post-meta {
   font-family: 'Inconsolata', sans-serif;
-  display: block;
+  display: inline-block;
   font-size: 16px;
   font-weight: 400;
   color: var(--light-grey);
@@ -383,6 +392,10 @@ a.next-link {
 }
 
 @media (max-width: 576px) {
+  body {
+    padding-bottom: 9rem;
+  }
+
   .container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
