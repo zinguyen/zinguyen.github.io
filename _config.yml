@@ -44,3 +44,7 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Blog
+permalink: /blog/:year/:month/:day/:title
+paginate: 5
