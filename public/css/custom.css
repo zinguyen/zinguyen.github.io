@@ -42,6 +42,22 @@ a.next-link:hover {
   color: var(--maroon);
 }
 
+.img-fluid {
+  max-width: 100%;
+}
+
+
+/* UTILITIES */
+.margin-bottom-sm {
+  margin-bottom: 2.566rem;
+}
+
+.margin-top-sm {
+  margin-top  : 2.566rem;
+}
+
+/* MAIN */
+
 .subtitle-heading,
 .next, .pagination {
   font-family: 'Inconsolata', sans-serif;
@@ -49,7 +65,6 @@ a.next-link:hover {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--light-grey);
-  margin-bottom: 2.566rem;
 }
 
 .btn-round {
@@ -331,11 +346,16 @@ a.next-link {
 .posts,
 .single-post {
   padding-top: 70px;
+  width: 70%;
 }
 
 .post {
-  padding: 3rem 0;
+  padding: 5rem 0;
   border-bottom: 1px solid var(--light-grey);
+}
+
+.post-header {
+  margin-bottom: 3rem;
 }
 
 .post:last-of-type {
@@ -367,10 +387,6 @@ a.next-link {
 
 .older {
   margin-right: 1.5rem;
-}
-
-.single-post {
-  padding-bottom: 70px;
 }
 
 /* ================ MEDIA QUERIES ================ */
