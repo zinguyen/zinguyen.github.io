@@ -64,11 +64,11 @@ a.next-link:hover {
 }
 
 .btn-round {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #fff;
   border-radius: 50%;
   height: 40px;
   width: 40px;
-  color: #fff;
+  color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,6 +77,7 @@ a.next-link:hover {
 
 .btn-round:hover {
   transform: scale(1.2, 1.2);
+  color: #fff;
   background-color: var(--maroon);
 }
 
@@ -337,6 +338,11 @@ a.next-link {
 
 .copyright {
   text-align: center;
+}
+
+.copyright a {
+  color: #fff;
+  border-bottom: 1px dotted #fafafa;
 }
 /* ================ BLOG ================ */
 .posts,
