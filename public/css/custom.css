@@ -1,7 +1,9 @@
 :root {
-  --maroon: #AA4244;
+  --maroon: #FC5C63;
   --body-text-dark: #333;
-  --light-grey: rgba(0, 0, 0, 0.5);
+  --text-light-grey: #CED1CC;
+  --text-dark-grey: #565A5C;
+  --light-gray: #fafafa;
 }
 
 *,
@@ -16,6 +18,7 @@ html {
 
 body {
   font-size: 1rem;
+  font-family: Hind, san-serif;
   /* major second ratio */
   color: var(--body-text-dark);
   position: relative;
@@ -30,10 +33,14 @@ body {
   position: relative;
 } */
 
+p {
+  color: var(--text-dark-grey);
+}
+
 a:link,
 a:visited {
-  color: var(--body-text-dark);
-  border-bottom: 1px dotted var(--body-text-dark);
+  color: var(--maroon);
+  /* border-bottom: 1px dotted ; */
 }
 
 a:hover,
@@ -60,11 +67,11 @@ a.next-link:hover {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--light-grey);
+  color: var(--text-light-grey);
 }
 
 .btn-round {
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 50%;
   height: 40px;
   width: 40px;
@@ -76,9 +83,9 @@ a.next-link:hover {
 }
 
 .btn-round:hover {
-  transform: scale(1.2, 1.2);
-  color: #fff;
-  background-color: var(--maroon);
+  transform: scale(1.5, 1.5);
+  color: var(--body-text-dark);
+  /* background-color: var(--maroon); */
 }
 
 /* ================ NAVBAR ================ */
@@ -104,14 +111,14 @@ a.next-link:hover {
 a.brand {
   font-weight: 400;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--text-dark-grey);
   letter-spacing: 2px;
   display: inline-block;
   transition: 0.3s ease;
 }
 
 .brand:hover {
-  color: rgba(255,255,255,0.5);
+  color: var(--maroon);
 }
 /* .brand:hover, a.nav-link:hover {
   text-decoration: none;
@@ -181,13 +188,13 @@ a.brand {
 
 .social-icons a {
   margin-right: 1rem;
+  border: none;
 }
 
 /* ================ PROJECTS ================ */
 
-.projects {
-  padding: 90px 0 120px 0;
-  background-color: #f5f3f3;
+.section {
+  padding: 100px 0;
 }
 
 .projects a, .post-title a {
@@ -222,7 +229,7 @@ a.brand {
 .preview-tech {
   font-family: 'Inconsolata', sans-serif;
   margin-bottom: 1.2rem;
-  color: var(--light-grey);
+  color: var(--text-light-grey);
   font-size: 1rem;
 }
 
@@ -261,7 +268,7 @@ a.brand {
   display: inline-block;
   font-size: 16px;
   font-weight: 400;
-  color: var(--light-grey);
+  color: var(--text-light-grey);
 }
 
 .project-desc .subtitle-heading {
@@ -294,9 +301,8 @@ a.next-link {
 }
 
 /* ================ ABOUT ================ */
-
 .about {
-  padding: 100px 0;
+  background-color: #fafafa;
 }
 
 .about-me {
@@ -306,11 +312,28 @@ a.next-link {
   align-items: center;
 }
 
+/* ================ SKILLS ================ */
+.skill {
+  background-color: #fafafa;
+  padding: 3rem 2rem;
+  height: 100%;
+  transition: all .3s;
+}
+
+.skill:hover {
+  background-color: var(--maroon);
+  transform: translateY(-1rem);
+}
+
+.skill:hover p {
+  color: var(--body-text-dark);
+}
+
 /* ================ FOOTER ================ */
 
 .footer {
-  background-color: var(--body-text-dark);
-  color: #fff;
+  background-color: #fafafa;
+  color: var(--body-text-dark);
   padding: 30px 0;
   font-size: 0.889rem;
   letter-spacing: 1px;
@@ -340,10 +363,6 @@ a.next-link {
   text-align: center;
 }
 
-.copyright a {
-  color: #fff;
-  border-bottom: 1px dotted #fafafa;
-}
 /* ================ BLOG ================ */
 .posts,
 .single-post {
@@ -352,7 +371,7 @@ a.next-link {
 
 .post {
   padding: 5rem 0;
-  border-bottom: 1px solid var(--light-grey);
+  border-bottom: 1px solid var(--text-light-grey);
 }
 
 .post-header {
@@ -379,7 +398,7 @@ a.next-link {
 }
 
 .read-more-link:hover {
-  color: var(--light-grey);
+  color: var(--text-light-grey);
 }
 
 .pagination {

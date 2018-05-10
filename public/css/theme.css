@@ -42,7 +42,7 @@
 
 
 	#banner h2 {
-		color: #fff;
+		color: var(--text-dark-grey)#;
 		font-size: 1.5rem;
 		font-weight: 800;
 		letter-spacing: 0.225em;
@@ -94,8 +94,7 @@
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: rgb(209, 209, 209);
-		color: rgb(0, 0, 0);
+		background: var(--light-gray);
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
@@ -128,7 +127,7 @@
 					border: 0;
 					color: inherit;
 					display: block;
-					font-size: 0.8em;
+					font-size: .9em;
 					letter-spacing: 0.225em;
 					outline: 0;
 					text-decoration: none;
@@ -188,14 +187,15 @@
 		-webkit-transition: background-color 0.2s ease;
 		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
-		background: #333;
-		height: 3em;
+		background: var(--light-gray);
+		height: 4em;
 		left: 0;
-		line-height: 3em;
+		line-height: 4em;
 		position: fixed;
 		top: 0;
 		width: 100%;
 		z-index: 10000;
+		/* border-bottom: 1px solid var(--text-light-grey); */
 	}
 
 		.brand {
@@ -244,7 +244,7 @@
 
 					#header nav > ul > li > a {
 						border: 0;
-						color: #fff;
+						color: var(--text-dark-grey);
 						display: block;
 						font-size: 0.8em;
 						letter-spacing: 0.225em;
@@ -266,6 +266,7 @@
 								height: 3.75em;
 								vertical-align: top;
 								width: 2em;
+								margin-top: 5px;
 							}
 
 							@media screen and (max-width: 736px) {
@@ -325,7 +326,7 @@
 		overflow: hidden;
 		position: relative;
 		text-align: center;
-		background-color: #333;
+		background-color: var(--light-gray);
 	}
 
 		#banner h2 {
@@ -354,7 +355,7 @@
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				background: #fff;
+				background: var(--text-dark-grey);
 				content: '';
 				display: block;
 				height: 2px;
@@ -373,7 +374,7 @@
 			}
 
 		#banner p {
-			color: #fff;
+			color: var(--text-dark-grey);
 			letter-spacing: 0.225em;
 			text-transform: uppercase;
 		}
@@ -393,7 +394,7 @@
 			transform: translateY(0);
 			border: none;
 			bottom: 0;
-			color: #fff;
+			color: var(--text-dark-grey);
 			font-size: 0.8em;
 			height: 8.5em;
 			left: 50%;
@@ -438,7 +439,7 @@
 			-ms-transition-delay: 1.25s;
 			transition-delay: 1.25s;
 			content: '';
-			background: #333;
+			background: var(--light-gray);
 			display: block;
 			width: 100%;
 			height: 100%;

@@ -48,7 +48,3 @@ plugins:
 
 # Blog
 paginate: 5
-
-include:
-node_modules
-vendors
