@@ -3,6 +3,18 @@ layout: default
 title: Blog
 permalink: /blog
 ---
+<!-- 
+<h1>Latest Posts</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul> -->
+
 <div class="col-md-8 offset-md-2">
   <div class="posts">
     {% for post in site.posts %}
@@ -27,10 +39,10 @@ permalink: /blog
     {% endfor %}
   
   <!-- COMING SOON -->
-    <h3>Coming soon...</h3>
+    <!-- <h3>Coming soon...</h3>
     <div>
       <iframe src="https://giphy.com/embed/3oKIPnAiaMCws8nOsE" width="457" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-    </div>
+    </div> -->
   <!-- COMING SOON -->
   <!-- Pagination -->
   <!-- <div class="pagination margin-bottom-sm">
