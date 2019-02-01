@@ -29,5 +29,18 @@ My agenda is to have a list of things I've learned each week in class and a list
 #### Week 2
 
 - Test Driven Development
-    - I ran into the term Test Driven Development before but didn't fully understand the concept until recently, and it completely changed the way I work. 
+    - I ran into the term Test Driven Development before but didn't fully understand the concept until recently, and it completely changed the way I work. The concept makes a lot more sense once demonstrated in class and I've found myself writing tests before implementing the code ever since.
 - Dealing with exceptions
+- Learning how to write a proper test.
+
+#### Week 3
+
+- Continue to learn how to represent more complex data: union data, enum and such.
+- Abstract class and Interface - when and how to best use them. Along with these is the use of _class diagram_.
+- Inheritance and dynamic dispatch in Java.
+- A lot more practices on writing good tests - use sampling to test a bunch of different inputs, how to approach the problems and make sure we cover many test cases to ensure that the codes work as we expect.
+- One thing a TA told me this week that I won't forget: **Your goal when writing tests is to break your code**
+
+#### Week 4
+
+- Revisit recursion using two different ways to approach a problem - unravel or accumulate.

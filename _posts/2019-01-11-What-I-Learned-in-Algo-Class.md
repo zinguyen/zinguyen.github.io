@@ -26,5 +26,13 @@ This is an on-going post about what I have learned in my Intro to Algo and Syste
     - Something is really cool about asking for memory and responsibly return these memory afterwards :)
 - Linked lists
     - I've been reading about linked list in <a href="https://www.manning.com/books/grokking-algorithms"> Grokking Algorithm</a> and listening to <a href="https://www.codingblocks.net/podcast/data-structures-arrays-and-array-ish/"> Code Blocks's Array vs. Array-ish podcast</a> so this week's materials really re-enforce the concept. Can't wait to learn implementing them in a project soon!
+- Queue and its implementation
+    - Write a queue with enqueue and dequeue functions in C
+- Buffer and Circular Buffer
 - Working with lab partners
     - This semester, we have a lot more of collaborative projects and labs which is exciting. I learned to tackle problems and work with other classmates.
+
+#### Week 3
+
+- All about sorting algorithms! Super interesting to see how different sorting algorithms approach and solve the problem of sorting a list and also performed time complexity analysis on these algorithms.
+- We also saw some new data structures such as trees in general and binary trees.
