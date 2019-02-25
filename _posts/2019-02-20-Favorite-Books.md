@@ -4,6 +4,10 @@ layout: post
 author: Zi Nguyen
 ---
 
+![Coffee and Books](/assets/aga-putra-125108-unsplash.jpg)
+
+<br>
+<br>
 2017 was the second year I participated in Goodread's Reading Challenge but it was the first year in which I actually completely my goal. I read somewhere around 19-20 books and as far as I could remember, it was one of my favorite time. I felt more productive spending time on reading instead of scrolling through Instagram or Pinterest. I also got to discover many amazing books, which constantly left me asking how I hadn't read them before. Overall, reading definitely does wonder to my soul.
 
 This year, I rejoined the Reading Challenge (after a rather slow 2018) with 19 books for 2019. Before I share what are on my list for this year, I'd love to gather some of my favorite reads here, in case any of you is looking for something to acccompany you on your daily commute :)
