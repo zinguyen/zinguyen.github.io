@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Zi Nguyen
+title: Zee Nguyen
 tagline: Boston Web Developer
 description: >- # this means to ignore newlines until "baseurl:"
   Photographer turned web developer
@@ -21,12 +21,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: https://zinguyen.github.io # the base hostname & protocol for your site, e.g. http://example.com
 
 author:
-  name: Zi nguyen
-  email: zi@zinguyen.com
-  linkedin: https://www.linkedin.com/in/zinguyen/
+  name: Zee nguyen
+  email: zeexnguyen@gmail.com
+  linkedin: https://www.linkedin.com/in/zeenguyen/
   twitter: https://twitter.com/zinguyenn
   github: https://github.com/zinguyen
-  instagram: https://www.instagram.com/zinguyenn/
+  instagram: https://www.instagram.com/zeenguyenn/
 
 # Build settings
 markdown: kramdown

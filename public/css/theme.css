@@ -42,7 +42,7 @@
 
 
 	#banner h2 {
-		color: var(--text-dark-grey)#;
+		color: var(--text-dark-grey);
 		font-size: 1.5rem;
 		font-weight: 800;
 		letter-spacing: 0.225em;
@@ -153,7 +153,7 @@
 			position: absolute;
 			right: 0;
 			top: 0;
-			vertical-align: middle;
+			/* vertical-align: middle; */
 			width: 7em;
 		}
 

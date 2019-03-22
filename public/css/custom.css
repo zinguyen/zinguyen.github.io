@@ -409,6 +409,15 @@ a.next-link {
   margin-right: 1.5rem;
 }
 
+/* ================ CONTACT ================ */
+.contact {
+  margin-top: 15rem;
+}
+
+.contact .col-md-4 {
+  padding-top: 6rem;
+}
+
 /* ================ MEDIA QUERIES ================ */
 
 @media (min-width: 992px) {
