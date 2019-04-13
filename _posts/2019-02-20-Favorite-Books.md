@@ -45,7 +45,6 @@ This year, I rejoined the Reading Challenge (after a rather slow 2018) with 19 b
 11. Homo Deus (Yuval Noah Harari)
 12. ~~Grokking Algorithms (Aditya Y. Bhargava)~~
 13. Algorithms to Live By (Brian Christian and Tom Griffiths)
-14. 
 
 
 P/S: Hopefully I'll get to add the comment section in for this blog really soon, so I can hear all about _your_ favorite books.
