@@ -1,3 +1,3 @@
-## Portfolio & Blog
+## Portfolio
 
-https://zeenguyen.github.io
+https://zee-nguyen.github.io
