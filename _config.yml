@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Zee Nguyen
-tagline: Boston Web Developer
+tagline: Software Engineer
 description: >- # this means to ignore newlines until "baseurl:"
-  Photographer turned web developer
+  ""
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://zee-nguyen.github.io # the base hostname & protocol for your site, e.g. http://example.com
 
