@@ -16,7 +16,7 @@ After taking notes from lectures and various other resources, I'm putting everyt
 3. Heapsort
 4. Quicksort
 5. Binary Search Tree
-6. Tree/ Tree traversal
+6. [Tree/ Tree traversal](http://localhost:4000/2019/08/22/algorithm-notes-tree.html)
 7. Graph: BFS + DFS
 8. Graph: Connected Components
 9. Graph: Minimum Spanning Tree
