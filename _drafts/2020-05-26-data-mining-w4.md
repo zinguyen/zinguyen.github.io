@@ -1,3 +1,9 @@
+---
+title: CS6220 - Week 4
+layout: post
+categories: notes
+---
+
 # Association Rules
 
 Apriori is an algorithm for frequent item set mining and association rule learning over transactional databases. The algorithm identifies the frequent individual items in the database and, as long as those itemsets appear sufficiently often in the database, extends them to larger itemsets. The frequent itemsets determined by Apriori can be used to determine association rules which highlight general trends in the database.
@@ -36,14 +42,19 @@ $$ \forall X, Y: (X \subseteq Y) \Rightarrow s(X) \geq s(Y) $$
 * Check candidate's for minimum support
 * Update k and repeat until the set of k-1 frequent itemsets is empty.
 
-![](../assets/notes/Apriori-Algorithm.jpg)
+![](../assets/img/2020-05-26-cs6220-week4/Apriori-Algorithm.jpg)
 
 ## Mining Association Rules
 
 Two-step approach:
 
-* **Step 1**: Frequent itemset generation: Generate all item sets whose support >= minsup
-* **Step 2**: Rule generation: Generate high confidence (strong) rules from each frequent itemset (called *candidate rule*)
+**Step 1**: Frequent itemset generation:
+
+* Generate all item sets whose support >= minsup
+
+**Step 2**: Rule generation:
+
+* Generate high confidence (strong) rules from each frequent itemset (called *candidate rule*)
 
 ## Cons of the Apriori Algorithm
 
@@ -59,4 +70,16 @@ Two-step approach:
 * An FP-Tree is a compressed representation of the input data.
 * It is constructed by reading the dataset one transaction at a time and mapping each transaction onto a path in the FP-Tree structure.
 
-![](../assets/notes/fp-tree.png)
+![](../assets/img/2020-05-26-cs6220-week4/fp-tree.png)
+
+* The size of an FP-tree depends on how the items are ordered
+
+#### FP-Tree Construction
+
+![](../assets/img/2020-05-26-cs6220-week4/fp-tree-construction.png)
+
+#### FP Conditional Tree
+
+![](../assets/img/2020-05-26-cs6220-week4/fp-conditional-tree-1.png)
+![](../assets/img/2020-05-26-cs6220-week4/fp-conditional-tree-2.png)
+![](../assets/img/2020-05-26-cs6220-week4/fp-conditional-tree-3.png)
