@@ -1,6 +1,6 @@
 # Association Rules
 
-determining relations among variables in large databases
+Apriori is an algorithm for frequent item set mining and association rule learning over transactional databases. The algorithm identifies the frequent individual items in the database and, as long as those itemsets appear sufficiently often in the database, extends them to larger itemsets. The frequent itemsets determined by Apriori can be used to determine association rules which highlight general trends in the database.
 
 ## 1. Market Basket Analysis
 
@@ -18,7 +18,45 @@ $$ conf(X \rightarrow Y) = \frac{supp(X \cup Y)}{supp(X)} $$
 
 ## 2. The Apriori Algorithm
 
-It assumes that
+Principles:
 
-* All subsets of a frequent itemset must be frequent
-* Similarly, for any infrequent itemset, all its supersets must be infrequent too
+1. If an itemset is frequent, then all of its subsets must also be frequent.
+2. Similarly, for any infrequent itemset, all its supersets must be infrequent too
+
+Example: If *{beer, diaper, oreos}* is frequent, so is *{beer, diaper}* since every transaction having the first also contains the latter.
+
+$$ \forall X, Y: (X \subseteq Y) \Rightarrow s(X) \geq s(Y) $$
+
+* The support of an itemset never exceeds that of its subsets
+* This is known as the **anti-monotone** property of support.
+
+### Pseudocode for Apriori Algorithm
+
+* Iteratively generate candidates with length *k+1* from frequent itemsets with length *k*
+* Check candidate's for minimum support
+* Update k and repeat until the set of k-1 frequent itemsets is empty.
+
+![](../assets/notes/Apriori-Algorithm.jpg)
+
+## Mining Association Rules
+
+Two-step approach:
+
+* **Step 1**: Frequent itemset generation: Generate all item sets whose support >= minsup
+* **Step 2**: Rule generation: Generate high confidence (strong) rules from each frequent itemset (called *candidate rule*)
+
+## Cons of the Apriori Algorithm
+
+* Sometimes, it may need to find a large number of candidate rules which can be computationally expensive.
+* Calculating support is also expensive because it has to go through the entire database.
+
+## 3. FP-Growth
+
+* Reduce the number of comparisons by using tree data structure to store the candidate itemsets or to compress the dataset.
+
+### FP-Tree
+
+* An FP-Tree is a compressed representation of the input data.
+* It is constructed by reading the dataset one transaction at a time and mapping each transaction onto a path in the FP-Tree structure.
+
+![](../assets/notes/fp-tree.png)
