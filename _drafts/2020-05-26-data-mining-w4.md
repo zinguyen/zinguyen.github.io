@@ -6,15 +6,20 @@ categories: notes
 
 # Association Rules
 
-Apriori is an algorithm for frequent item set mining and association rule learning over transactional databases. The algorithm identifies the frequent individual items in the database and, as long as those itemsets appear sufficiently often in the database, extends them to larger itemsets. The frequent itemsets determined by Apriori can be used to determine association rules which highlight general trends in the database.
+### Learning objectives:
+
+1. Define association rules and state their usefulness
+2. Explain the inner-workings of the Apriori algorithm, its benefits, and downsides
+3. Illustrate the steps involved in the FP-growth algorithm and highlight how it addresses shortcomings of Apriori
+4. Programmatically apply association rules to a data set and analyze the results
 
 ## 1. Market Basket Analysis
 
 ### Support
 
-The support of an itemset 𝑋, 𝑠𝑢𝑝𝑝(𝑋) is the proportion of transaction in the database in which the item X appears. It signifies the popularity of an itemset.
+The support of an itemset 𝑋, $$supp(X)$$ is the proportion of transaction in the database in which the item X appears. It signifies the popularity of an itemset.
 
-$$ 𝑠𝑢𝑝𝑝(𝑋) = Number of transaction in which 𝑋 appears / Total number of transactions $$
+$$ supp(𝑋) = Number of transaction in which 𝑋 appears / Total number of transactions $$
 
 If the sales of a particular product (item) above a certain proportion have a meaningful effect on profits, that proportion can be considered as the support threshold. Furthermore, we can identify itemsets that have support values beyond this threshold as significant itemsets.
 
@@ -24,7 +29,9 @@ $$ conf(X \rightarrow Y) = \frac{supp(X \cup Y)}{supp(X)} $$
 
 ## 2. The Apriori Algorithm
 
-Principles:
+Apriori is an algorithm for frequent item set mining and association rule learning over transactional databases. The algorithm identifies the frequent individual items in the database and, as long as those itemsets appear sufficiently often in the database, extends them to larger itemsets. The frequent itemsets determined by Apriori can be used to determine association rules which highlight general trends in the database.
+
+### Principles:
 
 1. If an itemset is frequent, then all of its subsets must also be frequent.
 2. Similarly, for any infrequent itemset, all its supersets must be infrequent too
@@ -44,19 +51,19 @@ $$ \forall X, Y: (X \subseteq Y) \Rightarrow s(X) \geq s(Y) $$
 
 ![](../assets/img/2020-05-26-cs6220-week4/Apriori-Algorithm.jpg)
 
-## Mining Association Rules
+### Mining Association Rules
 
 Two-step approach:
 
 **Step 1**: Frequent itemset generation:
 
-* Generate all item sets whose support >= minsup
+* Generate all item sets whose $$support \geq minsup$$
 
 **Step 2**: Rule generation:
 
 * Generate high confidence (strong) rules from each frequent itemset (called *candidate rule*)
 
-## Cons of the Apriori Algorithm
+### Cons of the Apriori Algorithm
 
 * Sometimes, it may need to find a large number of candidate rules which can be computationally expensive.
 * Calculating support is also expensive because it has to go through the entire database.
@@ -72,13 +79,13 @@ Two-step approach:
 
 ![](../assets/img/2020-05-26-cs6220-week4/fp-tree.png)
 
-* The size of an FP-tree depends on how the items are ordered
+* The size of an FP-tree depends on how the items are ordered:
 
-#### FP-Tree Construction
+### FP-Tree Construction
 
 ![](../assets/img/2020-05-26-cs6220-week4/fp-tree-construction.png)
 
-#### FP Conditional Tree
+### FP Conditional Tree
 
 ![](../assets/img/2020-05-26-cs6220-week4/fp-conditional-tree-1.png)
 ![](../assets/img/2020-05-26-cs6220-week4/fp-conditional-tree-2.png)
