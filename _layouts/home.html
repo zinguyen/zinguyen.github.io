@@ -8,26 +8,12 @@
 	<header id="header" class="alt">
 		<a class="brand" href="{{ site.url }}">Zee Nguyen</a>
 		<nav id="nav">
-			<ul>
-				<li class="special">
-					<a href="#menu" class="menuToggle">
-						<span>Menu</span>
-					</a>
-					<div id="menu">
-						<ul>
-							<li>
-								<a href="{{ site.url }}">Home</a>
-							</li>
-							<li>
-								<a href="{{ site.url }}/blog">Blog</a>
-							</li>
-							<li>
-								<a href="{{ site.url }}/contact">Contact</a>
-							</li>
-						</ul>
-					</div>
-				</li>
-			</ul>
+			<ul id="mainNav">
+				<li class="active"><a href="#banner">Home</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#portfolio">Projects</a></li>
+				<li><a href="#about">About</a></li>
+			  </ul>
 		</nav>
 	</header>
 
@@ -36,36 +22,68 @@
 	<section id="banner">
 		<div class="inner">
 			<h2>Zee Nguyen</h2>
-			<p>Software Engineer in the Making</p>
+			<p>Boston-based Software Engineer</p>
 		</div>
-		<a href="#portfolio" class="more scrolly">View Projects</a>
+		<a href="#experience" class="more scrolly">View More</a>
 	</section>
 
-	<section id="portfolio" class="section projects">
+	<!-- EXPERIENCE -->
+	<section id="experience" class="section">
 		<div class="container">
 			<div class="section-title">
-				<h2 class="subtitle-heading margin-bottom-sm">Projects - </h2>
+				<h2 class="subheading margin-bottom-sm">Experience - </h2>
 			</div>
-
-			<!-- Home in the Hub -->
-			<!-- <a href="homeinthehub.html">
-				<div class="row project-preview">
-					<div class="col-md-4 col-sm-4">
-						<img src="../public/images/homeinthehub.jpg" class="img-fluid" alt="bookswap thumbnail">
+			<div class="row">
+				<!-- Capital One -->
+				<div class="row experience-item">
+					<div class="col-md-3 company-logo">
+						<img src="../public/images/company-logos/capitalone-logo.png" class="img-fluid"
+							alt="capital one logo">
 					</div>
-					<div class="col-md-7 col-sm-7 offset-md-1 offset-sm-1 preview">
-						<div class="preview-title">
-							Home in the Hub
-						</div>
-						<div class="preview-tech">
-							HTML/CSS, Node.js, Express, Angular
-						</div>
-						<div class="preview-summary">
-							<p>Home in the Hub serves the Boston community and helps connect those in need to the closest support near them.</p>
+						
+					<div class="col-md-7 offset-md-1">
+						<h5 class="preview-subtitle">Capital One</h5>
+						<p class="preview-tech">Software Engineer Intern | Summer 2020</p>
+						<div>
+							<ul>
+								<li>Developed and implemented integration and automatic acceptance testing using Java and Cucumber for internal money movement platform, increased test coverage by 40%.</li>
+								<li>Provided metrics upon execution of regression suites to analyze current performance and track improvements over time.</li>
+								<li>Completed training and received certificate for secure coding.</li>
+								<li>Worked with over 80 Capital One associates to teach middle school students to program and mentor them throughout the process (<a href="https://coders.capitalone.com/">Coders Program</a>). </li>
+							</ul>
 						</div>
 					</div>
 				</div>
-			</a> -->
+				
+				<!-- Mercari -->
+				<div class="row experience-item">
+					<div class="col-md-3 company-logo">
+						<img src="../public/images/company-logos/mercari-logo.png" class="img-fluid"
+							alt="mercari inc logo">
+					</div>
+						
+					<div class="col-md-7 offset-md-1">
+						<h5 class="preview-subtitle">Mercari Inc.</h5>
+						<p class="preview-tech">Backend Engineer Co-op | Jan - May 2020</p>
+						<div>
+							<ul>
+								<li>Developed and deployed a microservice that served personalized marketing banners to over 1.2 million users daily.</li>
+								<li>Deployed and monitored server resources using Google Kubernetes Engine and Grafana.</li>
+								<li>Created data pipelines using Python and BigQuery that process terabytes of data daily.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- PROJECTS -->
+	<section id="portfolio" class="section colored-section projects">
+		<div class="container">
+			<div class="section-title">
+				<h2 class="subheading margin-bottom-sm">Projects - </h2>
+			</div>
 
 			<!-- Cosmic photo editing application -->
 			<a href="cosmic.html">
@@ -182,10 +200,10 @@
 	<!--projects-->
 
 	<!-- ABOUT -->
-	<section class="section about">
+	<section id="about" class="section">
 		<div class="container">
 			<div class="section-title">
-				<h2 class="subtitle-heading margin-bottom-sm">About - </h2>
+				<h2 class="subheading margin-bottom-sm">About - </h2>
 			</div>
 			<div class="row about-me">
 				<div class="col-md-4 profile">
@@ -223,7 +241,7 @@
 	<!-- <section class="skills section">
 		<div class="container">
 			<div class="section-title">
-				<h2 class="subtitle-heading margin-bottom-sm">Skills - </h2>
+				<h2 class="subheading margin-bottom-sm">Skills - </h2>
 			</div>
 			<div class="row row-eq-height">
 				<div class="col">
