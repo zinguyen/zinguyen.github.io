@@ -4,3 +4,4 @@ jekyll files/
 notes.md
 _site
 public/.DS_Store
+vendor/**
